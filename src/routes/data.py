@@ -29,7 +29,7 @@ async def upload_data(project_id: str, file: UploadFile,
             status_code=status.HTTP_400_BAD_REQUEST,
             content={
                 "signal": result_signal
-            }
+            }  
         )
 
     project_dir_path = ProjectController().get_project_path(project_id=project_id)
